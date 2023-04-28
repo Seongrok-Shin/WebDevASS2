@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Simple Taxi Booking System - Web-Based</title>
+</head>
+<body>
+    <form action="javascript:addBooking()" method="post">
+        <label>Type full name:</label>
+        <input type="text" name="cname" required>
+        <label>Type phone number:</label>
+        <input type="text" name="phone" required>
+        <label>Type unit name:</label>
+        <input type="text" name="unumber">
+        <label>Type street number:</label>
+        <input type="text" name="snumber" required>
+        <label>Type street name:</label>
+        <input type="text" name="stname" required>
+        <label>Type suburb name:</label>
+        <input type="text" name="sbname">
+        <label>Type destination suburb name:</label>
+        <input type="text" name="dsbname">
+        <lable>Choose Pick Up date:</lable>
+        <input type="date" name="date" required pattern="\d{2}/\d{2}/\d{4}">
+        <label>Choose Pick Up time:</label>
+        <input type="time" name="time" required pattern="hh:mm">
+        <button type="submit" name="Submit">Submit</button>
+        <button type="reset" name="Reset">Reset</button>
+    </form>
+</body>
+</html>
